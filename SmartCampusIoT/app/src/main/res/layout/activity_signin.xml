@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nps.roopesh.ewastecollector.Signin">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:alpha="0.93"
+        android:background="?attr/colorButtonNormal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="@string/username_msg"
+            android:inputType="textPersonName"
+            android:paddingLeft="0.11in"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0.11in"
+            android:layout_alignStart="@+id/username"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="@string/password_msg"
+            android:inputType="textPassword"
+            android:text="" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        >
+
+
+        <Button
+            android:id="@+id/login_anyway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_anyway" />
+
+        <Button
+            android:id="@+id/SignInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:text="@string/sign_in" />
+
+    </LinearLayout>
+</LinearLayout>

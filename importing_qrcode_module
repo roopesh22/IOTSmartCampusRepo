@@ -1,0 +1,5 @@
+how to add the qrcode module?
+right click on the app folder and add new module -> then import gradle project
+
+then when you get errors, 
+modify the  gradle.build script to add the compile qrcodescanner command.

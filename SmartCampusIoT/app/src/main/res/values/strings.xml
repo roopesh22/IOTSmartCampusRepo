@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SmartCampusIoT</string>
+
+<string name="bid_title">Current bidding price</string>
+<string name="place_bid">Place Bid</string>
+<string name="exit_bid">Exit the auction</string>
+<string name="sign_in">Login</string>
+<string name="username_msg">Enter your e-mail address</string>
+<string name="password_msg">Enter your password</string>
+<string name="enter_auction">Participate in Auction</string>
+<string name="negative_response_msg">Sorry there is no active auction at the moment\n</string>
+<string name="positive_response_msg">Auction Details:\n</string>
+<string name="menu_title">What would you like to do?</string>
+<string name="signin_title">Sign in to your account</string>
+<string name="auction_result_title">Check the result of any auction</string>
+<string name="login_anyway">Login Anyway</string>
+</resources>
+
