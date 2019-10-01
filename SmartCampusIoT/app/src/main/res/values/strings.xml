@@ -14,5 +14,9 @@
 <string name="signin_title">Sign in to your account</string>
 <string name="auction_result_title">Check the result of any auction</string>
 <string name="login_anyway">Login Anyway</string>
+    <string name="qr_code_string">Scan QR code to secure your attendance</string>
+    <string name="canteen_string">Pay your </string>
+    <string name="check_attendance">Check your attendance</string>
+    <string name="exit">Exit the app</string>
 </resources>
 

@@ -56,7 +56,7 @@ public class Signin extends AppCompatActivity {
         login_anyway.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Signin.this,QrcodeActivity1.class);
+                Intent i = new Intent(Signin.this,Menu.class);
                 startActivity(i);
                 Signin.this.finish();
             }

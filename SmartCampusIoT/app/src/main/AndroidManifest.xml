@@ -11,6 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
         </activity>
@@ -18,10 +19,13 @@
         <activity
             android:name=".QrcodeActivity1"
             android:label="Scan QR code"></activity>
+        <activity
+            android:name=".Menu"
+            android:label="Attendace Menu"></activity>
 
         <activity
             android:name=".Signin"
-            android:label="@string/signin_title">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
