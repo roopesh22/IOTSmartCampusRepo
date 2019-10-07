@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_weight="0.5"
         android:alpha="0.93"
-        android:background="?attr/colorButtonNormal"
+        android:background="?android:attr/colorPressedHighlight"
         android:orientation="vertical">
 
 
@@ -34,13 +34,13 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="0.11in"
             android:layout_alignStart="@+id/username"
             android:layout_below="@+id/username"
             android:layout_marginTop="36dp"
             android:ems="10"
             android:hint="@string/password_msg"
             android:inputType="textPassword"
+            android:paddingLeft="0.11in"
             android:text="" />
 
 
@@ -58,6 +58,7 @@
             android:id="@+id/login_anyway"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
             android:text="@string/login_anyway" />
 
         <Button
@@ -66,6 +67,12 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_green_light"
             android:text="@string/sign_in" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pes_mrd" />
 
     </LinearLayout>
 </LinearLayout>

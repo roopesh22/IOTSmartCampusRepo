@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Signin extends AppCompatActivity {
@@ -18,6 +19,8 @@ public class Signin extends AppCompatActivity {
     Button AddUserButton,SignInButton,login_anyway;
     static String email;
     Boolean SigninButtonClicked=false;
+    BackgroundWorker backgroundWorker;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,10 @@ public class Signin extends AppCompatActivity {
         password=(EditText)findViewById(R.id.password);
         SignInButton=(Button)findViewById(R.id.SignInButton);
         login_anyway = (Button)findViewById(R.id.login_anyway);
+
+
+
+
 
         SignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,9 +53,8 @@ public class Signin extends AppCompatActivity {
                     return;
                 }
 
-                if(!SigninButtonClicked) {
-                    login(username_text, password_text);
-                }
+                backgroundWorker = new BackgroundWorker(Signin.this, Signin.this);
+                backgroundWorker.execute("login", username_text, password_text);
 
             }
         });
